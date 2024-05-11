@@ -14,7 +14,7 @@
 <li> <a href="/Pages/formulario5.html">Formulario 5</a></li>
 </ul>
 
-<body>
+<body style="font-size: x-large;">
 
     <center>
     <form>
@@ -54,29 +54,26 @@
 <br>
 
 <p><b>Selecciona tu género</b></p>
-<br>
-<label for="genderM">Masculino</label>
 <input type="radio" id="genderM" name="genderM" value="Masculino">
+<label for="genderM">Masculino</label>
 <br>
-<label for="genderF">Femenino</label>
 <input type="radio" id="genderF" name="genderM" value="Femenino">
+<label for="genderF">Femenino</label>
 
 <br>
 <br>
 
 <p><b>¿Me siento viejo/a?</b></p>
 
-<br>
-
+<input type="checkbox" id="checkinSí" name="checkinSí" value="Sí">
 <label for="checkinSí">
     Sí
 </label>
-<input type="checkbox" id="checkinSí" name="checkinSí" value="Sí">
 <br>
+<input type="checkbox" id="checkinNo" name="checkinNo" value="No">
 <label for="checkinNo">
     No
 </label>
-<input type="checkbox" id="checkinNo" name="checkinNo" value="No">
 
 <br>
 <br>
@@ -152,7 +149,95 @@
 <br>
 <input type="color" id="bike" name="bike">
 
+<br>
+<br>
 
+<label for="bike-price">
+    Rango de precio de la bici
+</label>
+<br>
+<br>
+<input type="range" id="bike-price" name="bike-price" min="100" max="1000" step="50">
+
+<br>
+<br>
+
+<label for="bike-type">Selecciona el tipo de bici</label>
+<br>
+<select name="bike-type" 
+id="bike-type" 
+style="background-color: lightgray;">
+<br>
+<optgroup label ="Paseo">
+<hr>
+<br>
+<option value="Señorial">Señorial</option>
+<br>
+<hr>
+<option value="Antiplebeyos">Antiplebeyos</option>
+<br>
+<hr>
+<option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+<br>
+<hr>
+</optgroup>
+<optgroup label ="Montaña">
+    <hr>
+    <option value="Gamusinos">Gamusinos</option>
+    <hr>
+    <option value="Hueleflores-premium">Hueleflores premium</option>
+    <hr>
+    <option value="Fango-lover">Fango lover</option>
+    <hr>
+</optgroup>
+<optgroup label ="Carreras">
+    <hr>
+    <option value="Metroymedio">Metroymedio</option>
+    <hr>
+    <option value="Grupitors">Grupitors</option>
+    <hr>
+    <option value="3-de-la-tarde">3 de la tarde (fluorescente edition)</option>
+    <hr>
+
+</optgroup>
+</select>
+
+<br>
+
+<p>Selecciona los accesorios</p>
+
+<select name="Accesorios" id="Accesorios" multiple>
+
+    <optgroup label="Accesorios">
+        <option value="Ruedines">Ruedines</option>
+        <option value="Pegatinas">Pegatinas</option>
+        <option value="Cestita">Cestita</option>
+        <option value="Bomba-de-aire">Bomba de aire</option>
+        <option value="Timbre">Timbre</option>
+        <option value="Foco">Foco</option>
+    </optgroup>
+</select>
+
+<hr>
+<p>Selecciona la marca de la bici</p>
+
+<input type="radio" id="bike-brand-specialized" name="bike-brand" value="Specialized">
+    <label for="bike-brand-specialized">Specialized</label>
+<br>
+<input type="radio" id="bike-brand-trek" name="bike-brand" value="Trek">
+    <label for="bike-brand-trek">Trek</label>
+<br>
+    <input type="radio" id="bike-brand-merida" name="bike-brand" value="Merida">
+    <label for="bike-brand-merida">Merida</label>
+<br>
+<input type="radio" id="bike-brand-scott" name="bike-brand" value="Scott">
+<label for="bike-brand-scott">Scott</label>
+<br>
+<input type="radio" id="bike-brand-giant" name="bike-brand" value="Giant">
+<label for="bike-brand-giant">Giant</label>
+<br>
+<input type="radio" id="bike-brand-cube" name="bike-brand" value="Cube">
+<label for="bike-brand-cube">Cube</label>
 
 </body>
 </html>
